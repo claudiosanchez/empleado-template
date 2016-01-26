@@ -1,0 +1,15 @@
+// Footer
+footer {
+   background-image: url("../img/slide3.jpg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   .footer-inner {
+      background-color: rgba($theme-dark, .8);
+      padding: 34px 0;
+   }
+   .copy {
+      margin-bottom: 0;
+   }
+}

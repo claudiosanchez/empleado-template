@@ -1,0 +1,43 @@
+// Mixins
+@mixin box-shadow($value) {
+   -webkit-box-shadow: $value;
+   -moz-box-shadow: $value;
+   box-shadow: $value;
+}
+
+@mixin breakpoint($point) {
+   @if $point == small {
+      @media #{$break-sm-min} {@content;}
+   }
+   @if $point == medium {
+      @media #{$break-md-min} {@content;}
+   }
+}
+
+@mixin btn-variant($background, $color, $border) {
+   border-color: $border;
+   background-color: $background;
+   color: $color;
+   @include transition-all;
+   &:hover,
+   &:focus,
+   &.focus,
+   &:active,
+   &.active {
+      border-color: $border !important;
+      background-color: darken($background, 5%) !important;
+      color: $color !important;
+   }
+}
+
+@mixin transform($value) {
+   -webkit-transform: $value;
+   -moz-transform: $value;
+   transform: $value;
+}
+
+@mixin transition-all {
+   -webkit-transition: all .3s;
+   -moz-transition: all .3s;
+   transition: all .3s;
+}

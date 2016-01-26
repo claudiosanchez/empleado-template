@@ -1,0 +1,28 @@
+// Intro
+#intro {
+   color: white;
+   .intro-content {
+      background-color: rgba($theme-dark, .7);
+      height: 460px;
+      position: relative;
+      .intro-inner {
+         position: absolute;
+         top: 50%;
+         @include transform(translateY(-50%));
+         width: 100%;
+      }
+      h1 {
+         font-size: 34px;
+         margin-bottom: 0;
+         @include breakpoint(small) {
+            font-size: 44px;
+         }
+      }
+   }
+   .vegas-timer {
+      z-index: 9999999;
+      .vegas-timer-progress {
+         background: $theme-primary;
+      }
+   }
+}

@@ -1,0 +1,80 @@
+// Global Components
+html,
+body {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   background-color: $theme-bg;
+   color: $theme-dark;
+   font: 14px/1.4 "Raleway", sans-serif;
+   letter-spacing: 1px;
+}
+
+a,
+a:hover,
+a:focus {
+   color: $theme-primary;
+}
+
+hr {
+   background-color: $theme-line;
+   border-top: none;
+   height: 1px;
+   margin: 0;
+   &.small {
+      background-color: $theme-primary;
+      margin-bottom: 17px;
+      max-width: 50px;
+   }
+}
+
+strong {
+   font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   color: inherit;
+   font-weight: 300;
+   line-height: inherit;
+   margin: 0 0 14px;
+   text-transform: uppercase;
+}
+
+p {
+   margin-bottom: 14px;
+   &.lead {
+      font-size: 18px;
+      line-height: 2;
+      margin-bottom: 18px;
+      @include breakpoint(small) {
+         font-size: 20px;
+      }
+   }
+}
+
+.text-opacity {
+   color: rgba($theme-dark, .7);
+}
+
+.bg-white {
+   background-color: white;
+}
+
+main {
+   min-height: 100%;
+}
+
+section {
+   padding: 82px 0;
+}
+
+.no-padding {
+   padding: 0;
+}

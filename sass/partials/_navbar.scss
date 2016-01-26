@@ -1,0 +1,87 @@
+// Navigation
+.navbar-default {
+   background-color: white;
+   border-bottom: 1px solid $theme-line;
+   margin-bottom: 0;
+   .navbar-header {
+      .navbar-brand {
+         color: $theme-dark;
+         text-transform: uppercase;
+      }
+      .navbar-toggle {
+         border: 1px solid $theme-line;
+         border-radius: 0;
+         .icon-bar {
+            background-color: $theme-dark;
+         }
+         &:focus,
+         &:hover {
+            background-color: transparent;
+         }
+      }
+   }
+   .navbar-collapse {
+      border-style: none;
+   }
+   .nav {
+      margin-bottom: 0;
+      margin-top: 0;
+      > li {
+         > a {
+            border-bottom: 1px solid $theme-line;
+            color: $theme-dark;
+            padding: 14px 22px;
+            @include transition-all;
+            &:focus,
+            &:hover {
+               background-color: $theme-primary;
+               color: white;
+            }
+         }
+         &:last-child {
+            > a {
+               border-bottom: 1px solid transparent;
+            }
+         }
+         &.active {
+            > a,
+            > a:focus,
+            > a:hover {
+               background-color: $theme-primary;
+               color: white;
+            }
+         }
+      }
+   }
+   @include breakpoint(small) {
+      .nav {
+         > li {
+            > a {
+               border-bottom: 1px solid transparent;
+               border-right: 1px solid $theme-line;
+               padding: 18px 22px;
+               &:focus,
+               &:hover {
+                  background-color: transparent;
+                  @include box-shadow(0 1px $theme-primary);
+                  color: $theme-dark;
+               }
+            }
+            &:last-child {
+               > a {
+                  border-right: 1px solid transparent;
+               }
+            }
+            &.active {
+               > a,
+               > a:focus,
+               > a:hover {
+                  background-color: transparent;
+                  @include box-shadow(0 1px $theme-primary);
+                  color: $theme-dark;
+               }
+            }
+         }
+      }
+   }
+}

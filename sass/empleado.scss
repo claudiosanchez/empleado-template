@@ -1,0 +1,34 @@
+/*!
+Emplea.do - https://github.com/developersdo/empleo-dot-net
+Copyright (c) 2016 Emplea.do
+*/
+
+// VARIABLES AND MIXINS
+// =======================================
+//
+//  Including variables and mixins necessary for emplea.do
+
+@import "base/variables";
+@import "base/mixins";
+
+// BASE STYLES
+// =======================================
+//
+//  Including different elements styles necessary for emplea.do
+
+@import "base/elements";
+
+// IMPORT SECTIONS
+// =======================================
+//
+//  Including different partials necessary for emplea.do
+
+@import "partials/preloader";
+@import "partials/logo";
+@import "partials/navbar";
+@import "partials/intro";
+@import "partials/sections";
+@import "partials/footer";
+@import "partials/form";
+@import "partials/buttons";
+@import "partials/extras";

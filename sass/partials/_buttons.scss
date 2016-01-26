@@ -1,0 +1,23 @@
+// Buttons Styles
+.btn-default {
+   @include btn-variant(white, $theme-dark, $theme-line);
+}
+
+.btn-primary {
+   @include btn-variant($theme-primary, white, darken($theme-primary, 5%));
+}
+
+.btn {
+   border-radius: 0;
+   font-size: 14px;
+   letter-spacing: 1px;
+   line-height: inherit;
+   &:focus {
+      @include box-shadow(none);
+      outline: none !important;
+   }
+}
+
+.btn-xl {
+   padding: 11px 18px;
+}

@@ -1,0 +1,45 @@
+// Form
+label {
+   font-weight: 400;
+   line-height: inherit;
+   margin-bottom: 17px;
+}
+
+.form-group {
+   margin-bottom: 22px;
+}
+
+input,
+select,
+textarea {
+   &.form-control {
+      background-color: white;
+      border: 1px solid $theme-line;
+      border-radius: 0;
+      @include box-shadow(none);
+      color: inherit;
+      font-size: inherit;
+      height: auto;
+      letter-spacing: 1px;
+      line-height: inherit;
+      padding: 11px 18px;
+      @include transition-all;
+      &:focus {
+         border: 1px solid $theme-primary;
+         @include box-shadow(none);
+      }
+   }
+}
+
+input,
+select {
+   &.form-control {
+      height: 43px;
+   }
+}
+
+textarea {
+   &.form-control {
+      resize: none;
+   }
+}

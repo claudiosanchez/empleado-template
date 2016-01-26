@@ -1,0 +1,48 @@
+// Extras
+// -- Badges
+.badge {
+   background-color: $theme-dark;
+   border-radius: 0;
+   font-weight: inherit;
+   padding: 8px 14px;
+   &.badge-primary {
+      background-color: $theme-primary;
+   }
+}
+
+// -- Arrows
+.arrow {
+   display: inline-block;
+   height: 28px;
+   @include transition-all;
+   @include transform(rotate(-45deg));
+   width: 28px;
+   &.left {
+      border-left: 1px solid $theme-dark;
+      border-top: 1px solid $theme-dark;
+   }
+   &.right {
+      border-bottom: 1px solid $theme-dark;
+      border-right: 1px solid $theme-dark;
+   }
+   &:focus,
+   &:hover {
+      &.left,
+      &.right {
+         border-color: $theme-primary;
+      }
+   }
+}
+
+// -- Highlight Color Customization
+::-moz-selection {
+   background-color: $theme-primary;
+   color: white;
+   text-shadow: none;
+}
+
+::selection {
+   background-color: $theme-primary;
+   color: white;
+   text-shadow: none;
+}

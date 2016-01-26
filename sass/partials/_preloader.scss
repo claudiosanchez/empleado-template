@@ -1,0 +1,12 @@
+// Pre-loader Styles
+#pre-loader {
+   background: url("../img/pre-loader.gif"), white;
+   background-position: center center;
+   background-repeat: no-repeat;
+   height: 100%;
+   left: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 999999999999;
+}
