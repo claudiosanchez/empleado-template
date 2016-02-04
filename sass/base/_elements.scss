@@ -60,7 +60,7 @@ p {
 }
 
 .text-opacity {
-   color: rgba($theme-dark, .7);
+   color: darken($theme-line, 30%);
 }
 
 .bg-white {

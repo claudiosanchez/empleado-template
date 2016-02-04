@@ -104,53 +104,91 @@
                      <div class="form-group">
                         <label for="locality">Localidad</label>
                         <select class="form-control" id="locality">
-                           <option>Todas</option>
-                           <option>Remoto</option>
-                           <option>Santo Domingo</option>
-                           <option>Santiago</option>
-                           <option>Puerto Plata</option>
+                           <option value="">-- Todas --</option>
+                           <option value="">Puerto Plata</option>
+                           <option value="">Remoto</option>
+                           <option value="">Santiago</option>
+                           <option value="">Santo Domingo</option>
                         </select>
                      </div>
+                     
                      <div class="form-group">
                         <label for="categories">Categorias</label>
                         <select class="form-control" id="categories">
-                           <option>Todas</option>
-                           <option>Desarrollo para Moviles</option>
-                           <option>Desarrollo Web</option>
-                           <option>Desarrollo de software</option>
-                           <option>Diseno Grafico</option>
+                           <option value="">-- Todas --</option>
+                           <option value="">Administrador de DB</option>
+                           <option value="">Desarrollo para Moviles</option>
+                           <option value="">Desarrollo de software</option>
+                           <option value="">Desarrollo Web</option>
+                           <option value="">Diseno Grafico</option>
+                           <option value="">IT Ventas</option>
+                           <option value="">Redes y telecomunicaciones</option>
                         </select>
                      </div>
-                     <div class="form-group">
-                        <button type="button" class="btn btn-primary btn-xl">Buscar</button>
-                     </div>
+                     <button type="button" class="btn btn-primary btn-xl">Buscar</button>
                   </form>
                </div>
                <div class="col-md-7 col-md-offset-1">
-                  <div class="job-preview">
-                     <h3 class="job-title">
-                        <a href="#">Front-End Developer</a><small class="job-category">Desarrollo Web</small>
-                     </h3>
-                     <p><strong>Megsoft</strong>Santo Domingo <span class="badge">Remoto</span></p>
-                     <p class="text-opacity">Must Haves: - Excellent English skills. - A good working knowledge of HTML5 and CSS3 . - 2+ real projects...</p>
-                     <p class="text-opacity text-right">Publicado: 26/01/16 &boxv; Visitas: 3</p>
-                     <span class="badge badge-primary">Nuevo</span>
+                   <!-- Preview-list -->
+                  <div class="preview-job">
+                     <a href="#">
+                        <div class="preview-title">
+                           <h4>Front-End Developer</h4>
+                           <span class="preview-comp">Megsoft Consulting</span>
+                           <span class="text-opacity">Desarrollador Web</span>
+                        </div>
+                        <div class="preview-meta">
+                           <span>Hace dos dias &boxv; Visitas: 3</span>
+                        </div>
+                        <span class="badge badge-success preview-badge">Remote</span>
+                     </a>
                   </div>
-                  <div class="job-preview">
-                     <h3 class="job-title">
-                        <a href="#">Programador para Android</a><small class="job-category">Desarrollador para Moviles</small>
-                     </h3>
-                     <p><strong>SmartTec</strong>Santo Domingo</p>
-                     <p class="text-opacity">Desarrollador Junior para Android en Java utilizando Android Studio. Modificación de Apps y Creación...</p>
-                     <p class="text-opacity text-right">Publicado: 26/01/16 &boxv; Visitas: 34</p>
+                  <div class="preview-job">
+                     <a href="#">
+                        <div class="preview-title">
+                           <h4>Soporte Tecnico</h4>
+                           <span class="preview-comp">Banco Union</span>
+                           <span class="text-opacity">Redes y telecomunicaciones</span>
+                        </div>
+                        <div class="preview-meta">
+                           <span>Hace dos dias &boxv; Visitas: 3</span>
+                        </div>
+                        <span class="badge badge-primary preview-badge">Santo Domingo</span>
+                     </a>
                   </div>
-                  <div class="job-preview">
-                     <h3 class="job-title">
-                        <a href="#">Administrador Windows Server</a><small class="job-category">Administrador de Sistemas</small>
-                     </h3>
-                     <p><strong>PWC</strong>Santo Domingo <span class="badge">Remoto</span></p>
-                     <p class="text-opacity">Firma de auditores importante requiere persona con conocimientos avanzados en Windows Server 2008 R2...</p>
-                     <p class="text-opacity text-right">Publicado: 26/01/16 &boxv; Visitas: 3</p>
+                  <div class="preview-job">
+                     <a href="#">
+                        <div class="preview-title">
+                           <h4>Android Developer</h4>
+                           <span class="preview-comp">Blue Coding</span>
+                           <span class="text-opacity">Desarrollador para Moviles</span>
+                        </div>
+                        <div class="preview-meta">
+                           <span>Hace dos dias &boxv; Visitas: 3</span>
+                        </div>
+                        <span class="badge badge-success preview-badge">Remote</span>
+                     </a>
+                  </div>
+                  
+                  <!-- Preview-footer -->
+                  <div class="preview-footer">
+                     <nav>
+                        <ul class="pagination">
+                           <li>
+                              <a href="#" aria-label="Previous">
+                                 <span aria-hidden="true">&laquo;</span>
+                              </a>
+                           </li>
+                           <li><a href="#">1</a></li>
+                           <li><a href="#">2</a></li>
+                           <li><a href="#">3</a></li>
+                           <li>
+                              <a href="#" aria-label="Next">
+                                 <span aria-hidden="true">&raquo;</span>
+                              </a>
+                           </li>
+                        </ul>
+                     </nav>
                   </div>
                </div>
             </div>

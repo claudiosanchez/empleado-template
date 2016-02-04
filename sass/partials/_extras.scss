@@ -5,8 +5,12 @@
    border-radius: 0;
    font-weight: inherit;
    padding: 8px 14px;
+   text-transform: capitalize;
    &.badge-primary {
       background-color: $theme-primary;
+   }
+   &.badge-success {
+      background-color: $theme-success;
    }
 }
 
