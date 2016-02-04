@@ -98,39 +98,41 @@
 
 // Jobs Section
 #jobs-form {
+   margin-bottom: 24px;
    margin-top: 17px;
 }
 
-.job-preview {
-   border-bottom: 1px solid $theme-line;
-   padding: 24px;
-   position: relative;
+.preview-job {
+   background-color: white;
+   border: 1px solid $theme-line;
+   margin-bottom: 24px;
    @include transition-all;
    &:hover {
-      background-color: white;
+      border-color: $theme-primary;
    }
-   &:first-child {
+   a,
+   a:focus,
+   a:hover {
+      color: $theme-dark;
+      display: block;
+      position: relative;
+      text-decoration: none;
+   }
+   .preview-title {
+      padding: 24px;
+      .preview-comp {
+         &::after {
+            content: " - ";
+         }
+      }
+   }
+   .preview-meta {
       border-top: 1px solid $theme-line;
-      margin-top: 17px;
+      padding: 14px 24px;
    }
-   strong {
-      &::after {
-         content: " - ";
-      }
-   }
-   .job-title {
-      a {
-         color: $theme-dark;
-      }
-   }
-   .job-category {
-      &::before {
-         content: " - ";
-      }
-   }
-   > .badge {
+   .preview-badge {
       position: absolute;
-      top: 0;
       right: 0;
+      top: 0;
    }
 }

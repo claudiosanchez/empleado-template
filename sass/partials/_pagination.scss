@@ -1,0 +1,27 @@
+// Pagination
+.pagination {
+   margin: 24px 0 0;
+   > li {
+      > a,
+      > span {
+         color: $theme-dark;
+         border-color: $theme-line;
+         border-radius: 0;
+         line-height: inherit;
+         padding: 14px 24px;
+         @include transition-all;
+         &:focus,
+         &:hover {
+            border-color: darken($theme-primary, 5%);
+            background-color: $theme-primary;
+            color: white;
+         }
+      }
+      &:first-child,
+      &:last-child {
+         > a {
+             border-radius: 0;
+         }
+      }
+   }
+}
