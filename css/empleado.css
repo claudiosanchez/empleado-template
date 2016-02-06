@@ -313,8 +313,30 @@ section {
 }
 
 #jobs-form {
-  margin-bottom: 24px;
+  margin-bottom: 48px;
   margin-top: 17px;
+}
+
+.form-short-by {
+  margin-bottom: 48px;
+}
+.form-short-by form .form-group {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .form-short-by {
+    margin-top: 17px;
+    overflow: hidden;
+  }
+  .form-short-by form {
+    float: right;
+  }
+  .form-short-by form label {
+    margin-right: 14px;
+  }
+}
+.form-short-by + .preview-job {
+  margin-top: 0;
 }
 
 .preview-job {
@@ -328,12 +350,15 @@ section {
 .preview-job:hover {
   border-color: #e74c3c;
 }
-.preview-job a,
-.preview-job a:focus,
-.preview-job a:hover {
-  color: #1f2831;
+.preview-job:first-child {
+  margin-top: 17px;
+}
+.preview-job a {
   display: block;
   position: relative;
+}
+.preview-job a, .preview-job a:focus, .preview-job a:hover {
+  color: #1f2831;
   text-decoration: none;
 }
 .preview-job .preview-title {

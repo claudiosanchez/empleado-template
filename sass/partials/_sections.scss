@@ -98,8 +98,30 @@
 
 // Jobs Section
 #jobs-form {
-   margin-bottom: 24px;
+   margin-bottom: 48px;
    margin-top: 17px;
+}
+
+.form-short-by {
+   margin-bottom: 48px;
+   form {
+      .form-group {
+         margin-bottom: 0;
+      }
+   }
+   @include breakpoint(small) {
+      margin-top: 17px;
+      overflow: hidden;
+      form {
+         float: right;
+         label {
+            margin-right: 14px; 
+         }
+      }
+   }
+   &+ .preview-job {
+      margin-top: 0;
+   }
 }
 
 .preview-job {
@@ -110,13 +132,18 @@
    &:hover {
       border-color: $theme-primary;
    }
-   a,
-   a:focus,
-   a:hover {
-      color: $theme-dark;
+   &:first-child {
+      margin-top: 17px;
+   }
+   a {
       display: block;
       position: relative;
-      text-decoration: none;
+      &,
+      &:focus,
+      &:hover {
+         color: $theme-dark;
+         text-decoration: none;
+      }
    }
    .preview-title {
       padding: 24px;
