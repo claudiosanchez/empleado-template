@@ -15,12 +15,6 @@
    <!-- Fonts -->
    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 
-   <!-- Plugin CSS -->
-   <link href="css/owl-carousel/owl.carousel.css" rel="stylesheet">
-   <link href="css/owl-carousel/owl.theme.css" rel="stylesheet">
-   <link href="css/owl-carousel/owl.transitions.css" rel="stylesheet">
-   <link href="css/vegas.min.css" rel="stylesheet">
-
    <!-- Custom CSS -->
    <link href="css/empleado.css" rel="stylesheet">
 </head>
@@ -83,7 +77,7 @@
 
    <!-- Content -->
    <main>
-      <!-- Search Jobs -->
+      <!-- Jobs -->
       <section>
          <div class="container">
             <div class="row">
@@ -95,8 +89,9 @@
          </div>
          <div class="container">
             <div class="row">
+               <!-- Search Jobs -->
                <div class="col-md-4">
-                  <form id="jobs-form">
+                  <form class="job-search">
                      <div class="form-group">
                         <label for="keywords">Palabras Clave</label>
                         <input type="text" class="form-control" id="keywords" placeholder="Titulo, descripcion...">
@@ -128,30 +123,31 @@
                      <button type="button" class="btn btn-primary btn-xl">Buscar</button>
                   </form>
                </div>
+               
+               <!-- List of Jobs -->
                <div class="col-md-7 col-md-offset-1">
-                  <!-- Form Short By -->
-                  <div class="form-short-by">
-                    <form class="form-inline">
+                  <div class="job-meta">
+                     <h4><strong>120</strong> empleos encontrados:</h4>
+                     <form class="form-inline">
                         <div class="form-group">
-                           <label for="short-by">Organizar por:</label>
-                           <select class="form-control" id="short-by">
+                           <label class="hidden-md" for="sort-by">Ordenar por:</label>
+                           <select class="form-control" id="sort-by">
                               <option value="">Mas recientes</option>
                               <option value="">Mas antiguos</option>
                            </select>
                         </div>
-                    </form>
+                     </form>
                   </div>
                   
-                  <!-- Preview-list -->
                   <div class="preview-job">
                      <a href="#">
                         <div class="preview-title">
                            <h4>Front-End Developer</h4>
-                           <span class="preview-comp">Megsoft Consulting</span>
+                           <span class="preview-company">Megsoft Consulting</span>
                            <span class="text-opacity">Desarrollador Web</span>
                         </div>
                         <div class="preview-meta">
-                           <span>Hace dos dias &boxv; Visitas: 3</span>
+                           <span>02 de febrero 2016 &boxv; Visitas: 3</span>
                         </div>
                         <span class="badge badge-success preview-badge">Remote</span>
                      </a>
@@ -164,7 +160,7 @@
                            <span class="text-opacity">Redes y telecomunicaciones</span>
                         </div>
                         <div class="preview-meta">
-                           <span>Hace dos dias &boxv; Visitas: 3</span>
+                           <span>24 de enero 2016 &boxv; Visitas: 3</span>
                         </div>
                         <span class="badge badge-primary preview-badge">Santo Domingo</span>
                      </a>
@@ -177,32 +173,29 @@
                            <span class="text-opacity">Desarrollador para Moviles</span>
                         </div>
                         <div class="preview-meta">
-                           <span>Hace dos dias &boxv; Visitas: 3</span>
+                           <span>15 de enero 2016 &boxv; Visitas: 3</span>
                         </div>
                         <span class="badge badge-success preview-badge">Remote</span>
                      </a>
                   </div>
                   
-                  <!-- Preview-footer -->
-                  <div class="preview-footer">
-                     <nav>
-                        <ul class="pagination">
-                           <li>
-                              <a href="#" aria-label="Previous">
-                                 <span aria-hidden="true">&laquo;</span>
-                              </a>
-                           </li>
-                           <li><a href="#">1</a></li>
-                           <li><a href="#">2</a></li>
-                           <li><a href="#">3</a></li>
-                           <li>
-                              <a href="#" aria-label="Next">
-                                 <span aria-hidden="true">&raquo;</span>
-                              </a>
-                           </li>
-                        </ul>
-                     </nav>
-                  </div>
+                  <nav class="job-pagination">
+                     <ul class="pagination">
+                        <!--<li>
+                           <a href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                           </a>
+                        </li>-->
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li>
+                           <a href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
                </div>
             </div>
          </div>
@@ -229,10 +222,6 @@
 
    <!-- Bootstrap JS -->
    <script src="js/bootstrap.min.js"></script>
-
-   <!-- Plugin JS  -->
-   <script src="js/owl.carousel.min.js"></script>
-   <script src="js/vegas.min.js"></script>
 
    <!-- Custom JS -->
    <script src="js/empleado.js"></script>
