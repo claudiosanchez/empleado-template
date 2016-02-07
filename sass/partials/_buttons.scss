@@ -1,4 +1,7 @@
-// Buttons Styles
+/* ------------------------
+   # Buttons Styles
+--------------------------- */
+
 .btn-default {
    @include btn-variant(white, $theme-dark, $theme-line);
 }

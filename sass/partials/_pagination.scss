@@ -1,6 +1,9 @@
-// Pagination
+/* ------------------------
+   # Pagination
+--------------------------- */
+
 .pagination {
-   margin: 24px 0 0;
+   margin: 0;
    > li {
       > a,
       > span {
@@ -12,8 +15,8 @@
          @include transition-all;
          &:focus,
          &:hover {
+            background-color: $theme-primary;            
             border-color: darken($theme-primary, 5%);
-            background-color: $theme-primary;
             color: white;
          }
       }
@@ -21,6 +24,18 @@
       &:last-child {
          > a {
              border-radius: 0;
+         }
+      }
+      &.active {
+         > a,
+         > span {
+            &,
+            &:focus,
+            &:hover {
+               background-color: $theme-primary;               
+               border-color: darken($theme-primary, 5%);
+               color: white;
+            }
          }
       }
    }

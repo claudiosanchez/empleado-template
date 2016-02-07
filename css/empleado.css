@@ -2,6 +2,9 @@
 Emplea.do - https://github.com/developersdo/empleo-dot-net
 Copyright (c) 2016 Emplea.do
 */
+/* ------------------------
+   # Global Components
+--------------------------- */
 html,
 body {
   height: 100%;
@@ -72,10 +75,6 @@ p.lead {
   background-color: white;
 }
 
-main {
-  min-height: 100%;
-}
-
 section {
   padding: 82px 0;
 }
@@ -84,6 +83,13 @@ section {
   padding: 0;
 }
 
+main {
+  min-height: 100%;
+}
+
+/* ------------------------
+   # Pre-loader
+--------------------------- */
 #pre-loader {
   background: url("../img/pre-loader.gif"), white;
   background-position: center center;
@@ -96,6 +102,9 @@ section {
   z-index: 999999999999;
 }
 
+/* ------------------------
+   # Logo
+--------------------------- */
 .logo {
   background-color: white;
   width: 100%;
@@ -115,6 +124,9 @@ section {
   vertical-align: middle;
 }
 
+/* ------------------------
+   # Navigation
+--------------------------- */
 .navbar-default {
   background-color: white;
   border-bottom: 1px solid #e7e7e7;
@@ -189,6 +201,9 @@ section {
   }
 }
 
+/* ------------------------
+   # Intro
+--------------------------- */
 #intro {
   color: white;
 }
@@ -221,6 +236,9 @@ section {
   background: #e74c3c;
 }
 
+/* ------------------------
+   # Category Section
+--------------------------- */
 .category-box {
   background-image: url("../img/slide3.jpg");
   background-position: center center;
@@ -277,6 +295,9 @@ section {
   margin-bottom: 0;
 }
 
+/* ------------------------
+   # Clients Section
+--------------------------- */
 #owl-client .item .author strong {
   display: inline-block;
   margin-bottom: 8px;
@@ -312,30 +333,40 @@ section {
   }
 }
 
-#jobs-form {
+/* ------------------------
+   # Jobs Section
+--------------------------- */
+.job-search {
   margin-bottom: 48px;
   margin-top: 17px;
 }
 
-.form-short-by {
+.job-meta {
   margin-bottom: 48px;
 }
-.form-short-by form .form-group {
+.job-meta h4 {
+  margin-bottom: 18px;
+}
+.job-meta form .form-group {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  .form-short-by {
+  .job-meta {
     margin-top: 17px;
     overflow: hidden;
   }
-  .form-short-by form {
+  .job-meta h4 {
+    float: left;
+    margin: 8px 0 0;
+  }
+  .job-meta form {
     float: right;
   }
-  .form-short-by form label {
+  .job-meta form label {
     margin-right: 14px;
   }
 }
-.form-short-by + .preview-job {
+.job-meta + .preview-job {
   margin-top: 0;
 }
 
@@ -364,7 +395,7 @@ section {
 .preview-job .preview-title {
   padding: 24px;
 }
-.preview-job .preview-title .preview-comp::after {
+.preview-job .preview-title .preview-company::after {
   content: " - ";
 }
 .preview-job .preview-meta {
@@ -377,6 +408,13 @@ section {
   top: 0;
 }
 
+.job-pagination {
+  padding-top: 24px;
+}
+
+/* ------------------------
+   # Footer
+--------------------------- */
 footer {
   background-image: url("../img/slide3.jpg");
   background-position: center center;
@@ -392,6 +430,9 @@ footer .copy {
   margin-bottom: 0;
 }
 
+/* ------------------------
+   # Form Styles
+--------------------------- */
 label {
   font-weight: 400;
   line-height: inherit;
@@ -439,6 +480,9 @@ textarea.form-control {
   resize: none;
 }
 
+/* ------------------------
+   # Buttons Styles
+--------------------------- */
 .btn-default {
   border-color: #e7e7e7;
   background-color: white;
@@ -484,8 +528,11 @@ textarea.form-control {
   padding: 11px 18px;
 }
 
+/* ------------------------
+   # Pagination
+--------------------------- */
 .pagination {
-  margin: 24px 0 0;
+  margin: 0;
 }
 .pagination > li > a,
 .pagination > li > span {
@@ -501,14 +548,25 @@ textarea.form-control {
 .pagination > li > a:focus, .pagination > li > a:hover,
 .pagination > li > span:focus,
 .pagination > li > span:hover {
-  border-color: #e43725;
   background-color: #e74c3c;
+  border-color: #e43725;
   color: white;
 }
 .pagination > li:first-child > a, .pagination > li:last-child > a {
   border-radius: 0;
 }
+.pagination > li.active > a, .pagination > li.active > a:focus, .pagination > li.active > a:hover,
+.pagination > li.active > span,
+.pagination > li.active > span:focus,
+.pagination > li.active > span:hover {
+  background-color: #e74c3c;
+  border-color: #e43725;
+  color: white;
+}
 
+/* ------------------------
+   # Extras
+--------------------------- */
 .badge {
   background-color: #1f2831;
   border-radius: 0;

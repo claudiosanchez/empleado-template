@@ -1,4 +1,7 @@
-// Global Components
+/* ------------------------
+   # Global Components
+--------------------------- */
+
 html,
 body {
    height: 100%;
@@ -67,14 +70,14 @@ p {
    background-color: white;
 }
 
-main {
-   min-height: 100%;
-}
-
 section {
    padding: 82px 0;
 }
 
 .no-padding {
    padding: 0;
+}
+
+main {
+   min-height: 100%;
 }

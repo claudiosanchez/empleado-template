@@ -1,4 +1,7 @@
-// Category Section
+/* ------------------------
+   # Category Section
+--------------------------- */
+
 .category-box {
    background-image: url("../img/slide3.jpg");
    background-position: center center;
@@ -54,7 +57,10 @@
    }
 }
 
-// Clients Section
+/* ------------------------
+   # Clients Section
+--------------------------- */
+
 #owl-client {
    .item {
       .author {
@@ -96,14 +102,20 @@
    }
 }
 
-// Jobs Section
-#jobs-form {
+/* ------------------------
+   # Jobs Section
+--------------------------- */
+
+.job-search {
    margin-bottom: 48px;
    margin-top: 17px;
 }
 
-.form-short-by {
+.job-meta {
    margin-bottom: 48px;
+   h4 {
+      margin-bottom: 18px;
+   }
    form {
       .form-group {
          margin-bottom: 0;
@@ -112,6 +124,10 @@
    @include breakpoint(small) {
       margin-top: 17px;
       overflow: hidden;
+      h4 {
+         float: left;
+         margin: 8px 0 0;
+      }
       form {
          float: right;
          label {
@@ -147,7 +163,7 @@
    }
    .preview-title {
       padding: 24px;
-      .preview-comp {
+      .preview-company {
          &::after {
             content: " - ";
          }
@@ -162,4 +178,8 @@
       right: 0;
       top: 0;
    }
+}
+
+.job-pagination {
+   padding-top: 24px; 
 }
