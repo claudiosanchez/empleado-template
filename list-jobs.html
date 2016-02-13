@@ -77,60 +77,69 @@
 
    <!-- Content -->
    <main>
-      <!-- Jobs -->
+      <!-- Search Jobs -->
+      <section id="filter-job" class="no-padding">
+         <div class="filter-job-inner">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <h2>Busca el <strong>empleo</strong> de tu vida</h2>
+                     <hr class="small">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <form class="job-search row">
+                        <div class="form-group col-md-4">
+                           <label for="keywords">Palabras Clave</label>
+                           <input type="text" class="form-control" id="keywords" placeholder="Titulo, descripcion...">
+                        </div>
+                        <div class="form-group col-md-4">
+                           <label for="locality">Localidad</label>
+                           <select class="form-control" id="locality">
+                              <option value="">-- Todas --</option>
+                              <option value="">Puerto Plata</option>
+                              <option value="">Remoto</option>
+                              <option value="">Santiago</option>
+                              <option value="">Santo Domingo</option>
+                           </select>
+                        </div>
+                        
+                        <div class="form-group col-md-4">
+                           <label for="categories">Categorias</label>
+                           <select class="form-control" id="categories">
+                              <option value="">-- Todas --</option>
+                              <option value="">Administrador de DB</option>
+                              <option value="">Desarrollo para Moviles</option>
+                              <option value="">Desarrollo de software</option>
+                              <option value="">Desarrollo Web</option>
+                              <option value="">Diseno Grafico</option>
+                              <option value="">IT Ventas</option>
+                              <option value="">Redes y telecomunicaciones</option>
+                           </select>
+                        </div>
+                        <div class="col-md-12">
+                           <button type="button" class="btn btn-primary btn-xl">Buscar</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <!-- List of Jobs -->
       <section>
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h2>Busca el empleo de tu vida</h2>
-                  <hr class="small">
-               </div>
-            </div>
-         </div>
-         <div class="container">
-            <div class="row">
-               <!-- Search Jobs -->
-               <div class="col-md-4">
-                  <form class="job-search">
-                     <div class="form-group">
-                        <label for="keywords">Palabras Clave</label>
-                        <input type="text" class="form-control" id="keywords" placeholder="Titulo, descripcion...">
-                     </div>
-                     <div class="form-group">
-                        <label for="locality">Localidad</label>
-                        <select class="form-control" id="locality">
-                           <option value="">-- Todas --</option>
-                           <option value="">Puerto Plata</option>
-                           <option value="">Remoto</option>
-                           <option value="">Santiago</option>
-                           <option value="">Santo Domingo</option>
-                        </select>
-                     </div>
-                     
-                     <div class="form-group">
-                        <label for="categories">Categorias</label>
-                        <select class="form-control" id="categories">
-                           <option value="">-- Todas --</option>
-                           <option value="">Administrador de DB</option>
-                           <option value="">Desarrollo para Moviles</option>
-                           <option value="">Desarrollo de software</option>
-                           <option value="">Desarrollo Web</option>
-                           <option value="">Diseno Grafico</option>
-                           <option value="">IT Ventas</option>
-                           <option value="">Redes y telecomunicaciones</option>
-                        </select>
-                     </div>
-                     <button type="button" class="btn btn-primary btn-xl">Buscar</button>
-                  </form>
-               </div>
-               
-               <!-- List of Jobs -->
-               <div class="col-md-7 col-md-offset-1">
                   <div class="job-meta">
                      <h4><strong>120</strong> empleos encontrados:</h4>
                      <form class="form-inline">
                         <div class="form-group">
-                           <label class="hidden-md" for="sort-by">Ordenar por:</label>
+                           <label for="sort-by">Ordenar por:</label>
                            <select class="form-control" id="sort-by">
                               <option value="">Mas recientes</option>
                               <option value="">Mas antiguos</option>
@@ -141,41 +150,19 @@
                   
                   <div class="preview-job">
                      <a href="#">
-                        <div class="preview-title">
-                           <h4>Front-End Developer</h4>
-                           <span class="preview-company">Megsoft Consulting</span>
-                           <span class="text-opacity">Desarrollador Web</span>
+                        <div class="row">
+                           <div class="preview-title col-md-4">
+                              <h4>Front-End Developer</h4>
+                              <span class="text-opacity">Megsoft Consulting</span>
+                           </div>
+                            <div class="preview-date col-md-4 text-center">
+                              <span class="preview-date-place">Santo Domingo</span><br>
+                              <span class="text-opacity">06 febrero 2016</span>
+                           </div>
+                            <div class="col-md-4 text-center">
+                              <span class="badge badge-success">Remoto</span>
+                           </div>
                         </div>
-                        <div class="preview-meta">
-                           <span>02 de febrero 2016 &boxv; Visitas: 3</span>
-                        </div>
-                        <span class="badge badge-success preview-badge">Remote</span>
-                     </a>
-                  </div>
-                  <div class="preview-job">
-                     <a href="#">
-                        <div class="preview-title">
-                           <h4>Soporte Tecnico</h4>
-                           <span class="preview-company">Banco Union</span>
-                           <span class="text-opacity">Redes y telecomunicaciones</span>
-                        </div>
-                        <div class="preview-meta">
-                           <span>24 de enero 2016 &boxv; Visitas: 3</span>
-                        </div>
-                        <span class="badge badge-primary preview-badge">Santo Domingo</span>
-                     </a>
-                  </div>
-                  <div class="preview-job">
-                     <a href="#">
-                        <div class="preview-title">
-                           <h4>Android Developer</h4>
-                           <span class="preview-company">Blue Coding</span>
-                           <span class="text-opacity">Desarrollador para Moviles</span>
-                        </div>
-                        <div class="preview-meta">
-                           <span>15 de enero 2016 &boxv; Visitas: 3</span>
-                        </div>
-                        <span class="badge badge-success preview-badge">Remote</span>
                      </a>
                   </div>
                   
