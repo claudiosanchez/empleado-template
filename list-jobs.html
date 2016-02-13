@@ -78,57 +78,57 @@
    <!-- Content -->
    <main>
       <!-- Search Jobs -->
-      <section id="filter-job" class="no-padding">
-         <div class="filter-job-inner">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <h2>Busca el <strong>empleo</strong> de tu vida</h2>
-                     <hr class="small">
-                  </div>
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h3>Busca el <strong>empleo</strong> de tu vida</h3>
+                  <hr class="small">
                </div>
             </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <form class="job-search row">
-                        <div class="form-group col-md-4">
-                           <label for="keywords">Palabras Clave</label>
-                           <input type="text" class="form-control" id="keywords" placeholder="Titulo, descripcion...">
-                        </div>
-                        <div class="form-group col-md-4">
-                           <label for="locality">Localidad</label>
-                           <select class="form-control" id="locality">
-                              <option value="">-- Todas --</option>
-                              <option value="">Puerto Plata</option>
-                              <option value="">Remoto</option>
-                              <option value="">Santiago</option>
-                              <option value="">Santo Domingo</option>
-                           </select>
-                        </div>
-                        
-                        <div class="form-group col-md-4">
-                           <label for="categories">Categorias</label>
-                           <select class="form-control" id="categories">
-                              <option value="">-- Todas --</option>
-                              <option value="">Administrador de DB</option>
-                              <option value="">Desarrollo para Moviles</option>
-                              <option value="">Desarrollo de software</option>
-                              <option value="">Desarrollo Web</option>
-                              <option value="">Diseno Grafico</option>
-                              <option value="">IT Ventas</option>
-                              <option value="">Redes y telecomunicaciones</option>
-                           </select>
-                        </div>
-                        <div class="col-md-12">
-                           <button type="button" class="btn btn-primary btn-xl">Buscar</button>
-                        </div>
-                     </form>
-                  </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <form class="job-filter row">
+                     <div class="form-group col-md-4 col-sm-6">
+                        <label for="keywords">Palabras Clave</label>
+                        <input type="text" class="form-control" id="keywords" placeholder="Titulo, descripcion...">
+                     </div>
+                     <div class="form-group col-md-4 col-sm-6">
+                        <label for="locality">Localidad</label>
+                        <select class="form-control" id="locality">
+                           <option value="">-- Todas --</option>
+                           <option value="">Puerto Plata</option>
+                           <option value="">Remoto</option>
+                           <option value="">Santiago</option>
+                           <option value="">Santo Domingo</option>
+                        </select>
+                     </div>
+                     
+                     <div class="form-group col-md-4 col-sm-6">
+                        <label for="categories">Categorias</label>
+                        <select class="form-control" id="categories">
+                           <option value="">-- Todas --</option>
+                           <option value="">Administrador de DB</option>
+                           <option value="">Desarrollo para Moviles</option>
+                           <option value="">Desarrollo de software</option>
+                           <option value="">Desarrollo Web</option>
+                           <option value="">Diseno Grafico</option>
+                           <option value="">IT Ventas</option>
+                           <option value="">Redes y telecomunicaciones</option>
+                        </select>
+                     </div>
+                     <div class="col-md-12 col-sm-12">
+                        <button type="button" class="btn btn-primary btn-xl">Buscar</button>
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
       </section>
+      
+      <hr>
       
       <!-- List of Jobs -->
       <section>
@@ -148,23 +148,64 @@
                      </form>
                   </div>
                   
-                  <div class="preview-job">
-                     <a href="#">
-                        <div class="row">
-                           <div class="preview-title col-md-4">
-                              <h4>Front-End Developer</h4>
-                              <span class="text-opacity">Megsoft Consulting</span>
+                  <div class="list-preview">
+                     <div class="preview-job">
+                        <a href="#">
+                           <div class="row">
+                              <div class="preview-title col-md-4 col-sm-9">
+                                 <h5>Front-End Developer</h5>
+                                 <span class="text-opacity">Megsoft Consulting</span>
+                              </div>
+                              <div class="preview-text col-md-4 col-sm-3">
+                                 <span class="preview-text-item">Santo Domingo</span><br>
+                                 <span class="text-opacity hidden-xs">06 febrero 2016</span>
+                              </div>
+                              <div class="preview-text col-md-4 hidden-sm hidden-xs">
+                                 <span class="preview-text-item">Desarrollo Web</span><br>
+                                 <span class="text-opacity">Visitas: 22</span>                              
+                              </div>
                            </div>
-                            <div class="preview-date col-md-4 text-center">
-                              <span class="preview-date-place">Santo Domingo</span><br>
-                              <span class="text-opacity">06 febrero 2016</span>
+                           <span class="badge badge-success preview-badge hidden-xs">Remoto</span>
+                        </a>
+                     </div>
+                     <div class="preview-job">
+                        <a href="#">
+                           <div class="row">
+                              <div class="preview-title col-md-4 col-sm-9">
+                                 <h5>IOS Developer</h5>
+                                 <span class="text-opacity">Blue Coding</span>
+                              </div>
+                              <div class="preview-text col-md-4 col-sm-3">
+                                 <span class="preview-text-item">Santo Domingo</span><br>
+                                 <span class="text-opacity hidden-xs">04 febrero 2016</span>
+                              </div>
+                              <div class="preview-text col-md-4 hidden-sm hidden-xs">
+                                 <span class="preview-text-item">Desarrollo Movil</span><br>
+                                 <span class="text-opacity">Visitas: 22</span>                              
+                              </div>
                            </div>
-                            <div class="col-md-4 text-center">
-                              <span class="badge badge-success">Remoto</span>
+                        </a>
+                     </div>
+                     <div class="preview-job">
+                        <a href="#">
+                           <div class="row">
+                              <div class="preview-title col-md-4 col-sm-9">
+                                 <h5>Soporte Tecnico</h5>
+                                 <span class="text-opacity">Banco Union</span>
+                              </div>
+                              <div class="preview-text col-md-4 col-sm-3">
+                                 <span class="preview-text-item">Santo Domingo</span><br>
+                                 <span class="text-opacity hidden-xs">02 febrero 2016</span>
+                              </div>
+                              <div class="preview-text col-md-4 hidden-sm hidden-xs">
+                                 <span class="preview-text-item">Redes y telecomunicaciones</span><br>
+                                 <span class="text-opacity">Visitas: 22</span>                              
+                              </div>
                            </div>
-                        </div>
-                     </a>
+                        </a>
+                     </div>
                   </div>
+                     
                   
                   <nav class="job-pagination">
                      <ul class="pagination">

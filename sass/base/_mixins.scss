@@ -9,6 +9,9 @@
    @if $point == small {
       @media #{$break-sm-min} {@content;}
    }
+   @if $point == max-small {
+      @media #{$break-sm-max} {@content;}
+   }
    @if $point == medium {
       @media #{$break-md-min} {@content;}
    }

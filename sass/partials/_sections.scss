@@ -62,6 +62,7 @@
 --------------------------- */
 
 #owl-client {
+   padding: 62px 0;
    .item {
       .author {
          strong {
@@ -106,31 +107,13 @@
    # Jobs Section
 --------------------------- */
 
-// -- Filter Job
-
-#filter-job {
-   background-image: url("../img/slide3.jpg");
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   .filter-job-inner {
-      background-color: rgba($theme-dark, .7);
-      padding: 82px 0;
-   }
-   h2 {
-      color: white;
-   }
+.job-filter {
+   padding-top: 17px;
 }
 
-.job-search {
-   padding-top: 24px;
-   label {
-      color: white;
-   }
-}
-
+// -- Job-Meta (Sort By, etc.)
 .job-meta {
-   margin-bottom: 48px;
+   margin-bottom: 18px;
    h4 {
       margin-bottom: 18px;
    }
@@ -157,15 +140,20 @@
    }
 }
 
+// -- Preview Job
+.list-preview {
+   .preview-job {
+      &:nth-child(2n+1) {
+         border-left-color: $theme-primary;
+      }
+   }
+}
+
 .preview-job {
    background-color: white;
    border: 1px solid $theme-line;
-   margin-bottom: 24px;
+   margin-bottom: -1px;
    padding: 24px;
-   @include transition-all;
-   &:hover {
-      border-color: $theme-primary;
-   }
    a {
       display: block;
       position: relative;
@@ -176,26 +164,33 @@
          text-decoration: none;
       }
    }
-   .preview-title {
-      .preview-company {
-         &::after {
-            content: " - ";
-         }
-      }
-   }
-   .preview-date {
-      .preview-date-place {
+   .preview-text {
+      .preview-text-item {
          display: inline-block;
          margin-bottom: 14px;
       }
+      @include breakpoint(medium) {
+         text-align: center;
+      }
+   }
+   @include breakpoint(max-small) {
+      .preview-title {
+         margin-bottom: 14px;
+      }
+      .preview-text {
+         .preview-text-item {
+            margin-bottom: 0;
+         }
+      }
    }
    .preview-badge {
-      position: absolute;
-      right: 0;
-      top: 0;
+     position: absolute;
+     top: -24px;
+     right: -24px;
    }
 }
 
+// -- Job-Pagination
 .job-pagination {
    padding-top: 24px; 
 }
