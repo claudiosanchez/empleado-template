@@ -77,26 +77,25 @@
 
    <!-- Content -->
    <main>
-      <!-- Jobs -->
+      <!-- Search Jobs -->
       <section>
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h2>Busca el empleo de tu vida</h2>
+                  <h3>Busca el <strong>empleo</strong> de tu vida</h3>
                   <hr class="small">
                </div>
             </div>
          </div>
          <div class="container">
             <div class="row">
-               <!-- Search Jobs -->
-               <div class="col-md-4">
-                  <form class="job-search">
-                     <div class="form-group">
+               <div class="col-md-12">
+                  <form class="job-filter row">
+                     <div class="form-group col-md-4 col-sm-6">
                         <label for="keywords">Palabras Clave</label>
                         <input type="text" class="form-control" id="keywords" placeholder="Titulo, descripcion...">
                      </div>
-                     <div class="form-group">
+                     <div class="form-group col-md-4 col-sm-6">
                         <label for="locality">Localidad</label>
                         <select class="form-control" id="locality">
                            <option value="">-- Todas --</option>
@@ -107,7 +106,7 @@
                         </select>
                      </div>
                      
-                     <div class="form-group">
+                     <div class="form-group col-md-4 col-sm-6">
                         <label for="categories">Categorias</label>
                         <select class="form-control" id="categories">
                            <option value="">-- Todas --</option>
@@ -120,17 +119,27 @@
                            <option value="">Redes y telecomunicaciones</option>
                         </select>
                      </div>
-                     <button type="button" class="btn btn-primary btn-xl">Buscar</button>
+                     <div class="col-md-12 col-sm-12">
+                        <button type="button" class="btn btn-primary btn-xl">Buscar</button>
+                     </div>
                   </form>
                </div>
-               
-               <!-- List of Jobs -->
-               <div class="col-md-7 col-md-offset-1">
+            </div>
+         </div>
+      </section>
+      
+      <hr>
+      
+      <!-- List of Jobs -->
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
                   <div class="job-meta">
                      <h4><strong>120</strong> empleos encontrados:</h4>
                      <form class="form-inline">
                         <div class="form-group">
-                           <label class="hidden-md" for="sort-by">Ordenar por:</label>
+                           <label for="sort-by">Ordenar por:</label>
                            <select class="form-control" id="sort-by">
                               <option value="">Mas recientes</option>
                               <option value="">Mas antiguos</option>
@@ -139,45 +148,64 @@
                      </form>
                   </div>
                   
-                  <div class="preview-job">
-                     <a href="#">
-                        <div class="preview-title">
-                           <h4>Front-End Developer</h4>
-                           <span class="preview-company">Megsoft Consulting</span>
-                           <span class="text-opacity">Desarrollador Web</span>
-                        </div>
-                        <div class="preview-meta">
-                           <span>02 de febrero 2016 &boxv; Visitas: 3</span>
-                        </div>
-                        <span class="badge badge-success preview-badge">Remote</span>
-                     </a>
+                  <div class="list-preview">
+                     <div class="preview-job">
+                        <a href="#">
+                           <div class="row">
+                              <div class="preview-title col-md-4 col-sm-9">
+                                 <h5>Front-End Developer</h5>
+                                 <span class="text-opacity">Megsoft Consulting</span>
+                              </div>
+                              <div class="preview-text col-md-4 col-sm-3">
+                                 <span class="preview-text-item">Santo Domingo</span><br>
+                                 <span class="text-opacity hidden-xs">06 febrero 2016</span>
+                              </div>
+                              <div class="preview-text col-md-4 hidden-sm hidden-xs">
+                                 <span class="preview-text-item">Desarrollo Web</span><br>
+                                 <span class="text-opacity">Visitas: 22</span>                              
+                              </div>
+                           </div>
+                           <span class="badge badge-success preview-badge hidden-xs">Remoto</span>
+                        </a>
+                     </div>
+                     <div class="preview-job">
+                        <a href="#">
+                           <div class="row">
+                              <div class="preview-title col-md-4 col-sm-9">
+                                 <h5>IOS Developer</h5>
+                                 <span class="text-opacity">Blue Coding</span>
+                              </div>
+                              <div class="preview-text col-md-4 col-sm-3">
+                                 <span class="preview-text-item">Santo Domingo</span><br>
+                                 <span class="text-opacity hidden-xs">04 febrero 2016</span>
+                              </div>
+                              <div class="preview-text col-md-4 hidden-sm hidden-xs">
+                                 <span class="preview-text-item">Desarrollo Movil</span><br>
+                                 <span class="text-opacity">Visitas: 22</span>                              
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="preview-job">
+                        <a href="#">
+                           <div class="row">
+                              <div class="preview-title col-md-4 col-sm-9">
+                                 <h5>Soporte Tecnico</h5>
+                                 <span class="text-opacity">Banco Union</span>
+                              </div>
+                              <div class="preview-text col-md-4 col-sm-3">
+                                 <span class="preview-text-item">Santo Domingo</span><br>
+                                 <span class="text-opacity hidden-xs">02 febrero 2016</span>
+                              </div>
+                              <div class="preview-text col-md-4 hidden-sm hidden-xs">
+                                 <span class="preview-text-item">Redes y telecomunicaciones</span><br>
+                                 <span class="text-opacity">Visitas: 22</span>                              
+                              </div>
+                           </div>
+                        </a>
+                     </div>
                   </div>
-                  <div class="preview-job">
-                     <a href="#">
-                        <div class="preview-title">
-                           <h4>Soporte Tecnico</h4>
-                           <span class="preview-company">Banco Union</span>
-                           <span class="text-opacity">Redes y telecomunicaciones</span>
-                        </div>
-                        <div class="preview-meta">
-                           <span>24 de enero 2016 &boxv; Visitas: 3</span>
-                        </div>
-                        <span class="badge badge-primary preview-badge">Santo Domingo</span>
-                     </a>
-                  </div>
-                  <div class="preview-job">
-                     <a href="#">
-                        <div class="preview-title">
-                           <h4>Android Developer</h4>
-                           <span class="preview-company">Blue Coding</span>
-                           <span class="text-opacity">Desarrollador para Moviles</span>
-                        </div>
-                        <div class="preview-meta">
-                           <span>15 de enero 2016 &boxv; Visitas: 3</span>
-                        </div>
-                        <span class="badge badge-success preview-badge">Remote</span>
-                     </a>
-                  </div>
+                     
                   
                   <nav class="job-pagination">
                      <ul class="pagination">
