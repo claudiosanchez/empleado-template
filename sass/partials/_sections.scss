@@ -141,21 +141,16 @@
 }
 
 // -- Preview Job
-.list-preview {
-   .preview-job {
-      &:nth-child(2n+1) {
-         border-left-color: $theme-primary;
-      }
-   }
-}
-
 .preview-job {
    background-color: white;
    border: 1px solid $theme-line;
    margin-bottom: -1px;
-   padding: 24px;
+   &:hover {
+      border-left-color: $theme-primary;
+   }
    a {
       display: block;
+      padding: 18px 24px;      
       position: relative;
       &,
       &:focus,
@@ -185,8 +180,8 @@
    }
    .preview-badge {
      position: absolute;
-     top: -24px;
-     right: -24px;
+     top: 0;
+     right: 0;
    }
 }
 
@@ -213,7 +208,7 @@
    }
 }
 
-// -- Job Details Sidebar
+// -- Job Details Aside
 .job-details-aside {
    #company {
       img {
