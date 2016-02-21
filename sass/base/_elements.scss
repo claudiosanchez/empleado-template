@@ -11,7 +11,7 @@ body {
 body {
    background-color: $theme-bg;
    color: $theme-dark;
-   font: 14px/1.4 "Raleway", sans-serif;
+   font: 14px/1.8 "Raleway", sans-serif;
    letter-spacing: 1px;
 }
 
@@ -50,15 +50,17 @@ h6 {
    text-transform: uppercase;
 }
 
-p {
-   margin-bottom: 14px;
-   &.lead {
-      font-size: 18px;
-      line-height: 2;
-      margin-bottom: 18px;
-      @include breakpoint(small) {
-         font-size: 20px;
-      }
+p,
+ul {
+   margin-bottom: 18px;
+}
+
+p.lead {
+   font-size: 18px;
+   line-height: 2;
+   margin-bottom: 20px;
+   @include breakpoint(small) {
+      font-size: 20px;
    }
 }
 
@@ -68,6 +70,10 @@ p {
 
 .bg-white {
    background-color: white;
+}
+
+.img-responsive {
+   margin: 0 auto;
 }
 
 section {
