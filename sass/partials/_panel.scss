@@ -1,0 +1,25 @@
+/* ------------------------
+   # Panels
+--------------------------- */
+
+.panel {
+   border-radius: 0;         
+   @include box-shadow(none);
+   margin-bottom: 24px;
+   .panel-heading,
+   .panel-body,
+   .panel-footer {
+      padding: 14px 24px;
+   }
+   .panel-title {
+      font-size: 18px;
+   }
+   &.panel-default {
+      border-color: $theme-line;
+      .panel-heading,
+      .panel-footer {
+         background-color: white;
+         border-color: $theme-line;         
+      }
+   }
+}
