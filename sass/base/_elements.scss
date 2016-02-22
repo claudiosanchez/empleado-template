@@ -64,6 +64,10 @@ p.lead {
    }
 }
 
+ul.list-unstyled {
+   margin-bottom: 0;
+}
+
 .text-opacity {
    color: darken($theme-line, 30%);
 }
