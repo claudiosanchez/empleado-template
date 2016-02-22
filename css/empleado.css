@@ -69,6 +69,10 @@ p.lead {
   }
 }
 
+ul.list-unstyled {
+  margin-bottom: 0;
+}
+
 .text-opacity {
   color: #9b9b9b;
 }
@@ -423,30 +427,31 @@ main {
 /* ------------------------
    # Job Details
 --------------------------- */
-.job-details-meta {
-  list-style: none;
-  margin: 0;
-  padding: 17px 0 0;
+.job-details-content {
+  margin-top: 25px;
 }
-.job-details-meta > li {
+.job-details-content #meta ul {
+  position: relative;
+}
+.job-details-content #meta ul > li {
   margin: 0 0 14px 0;
 }
 @media (min-width: 768px) {
-  .job-details-meta > li {
+  .job-details-content #meta ul > li {
     display: inline-block;
     margin: 0 24px 0 0;
   }
 }
-
-.job-details-aside #company img {
+.job-details-content #meta ul > li.remote {
+  margin: 0;
+  position: absolute;
+  right: -24px;
+  top: -42px;
+}
+.job-details-content #company img {
   margin-bottom: 24px;
 }
-.job-details-aside #share ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.job-details-aside #share ul li {
+.job-details-content #share ul li {
   display: inline-block;
   margin-right: 12px;
 }
