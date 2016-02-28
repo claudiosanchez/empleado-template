@@ -218,25 +218,41 @@ main {
 }
 #intro .intro-content {
   background-color: rgba(31, 40, 49, 0.7);
-  height: 440px;
+  height: 460px;
   position: relative;
 }
 #intro .intro-content .intro-inner {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 80px;
   width: 100%;
+}
+@media (max-width: 767px) {
+  #intro .intro-content .intro-inner {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
 #intro .intro-content h1 {
   font-size: 34px;
-  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   #intro .intro-content h1 {
     font-size: 44px;
   }
+}
+#intro .intro-content hr.small {
+  margin: 24px auto;
+}
+#intro .intro-content .intro-counter {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+#intro .intro-content .intro-counter .counter-box {
+  padding: 40px 14px;
 }
 #intro .vegas-timer {
   z-index: 9999999;
