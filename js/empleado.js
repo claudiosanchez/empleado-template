@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).ready(function() {
    // Pre-loader
    $("#pre-loader").fadeOut(1500);
 
