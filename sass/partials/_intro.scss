@@ -6,20 +6,34 @@
    color: white;
    .intro-content {
       background-color: rgba($theme-dark, .7);
-      height: 440px;
+      height: 460px;
       position: relative;
       .intro-inner {
          position: absolute;
-         top: 50%;
-         @include transform(translateY(-50%));
+         top: 80px;
          width: 100%;
+         @include breakpoint(max-small) {
+            top: 50%;
+            @include transform(translateY(-50%));
+         }
       }
       h1 {
          font-size: 34px;
-         margin-bottom: 0;
          @include breakpoint(small) {
             font-size: 44px;
          }
+      }
+      hr.small {
+         margin: 24px auto;
+      }
+      .intro-counter {
+         bottom: 0;
+         left: 0;
+         position: absolute;
+         width: 100%;
+         .counter-box {
+            padding: 40px 14px;
+         }      
       }
    }
    .vegas-timer {
