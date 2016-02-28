@@ -397,6 +397,12 @@ main {
   color: #1f2831;
   text-decoration: none;
 }
+.preview-job .preview-title h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
 .preview-job .preview-text .preview-text-item {
   display: inline-block;
   margin-bottom: 14px;
@@ -406,7 +412,7 @@ main {
     text-align: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .preview-job .preview-title {
     margin-bottom: 14px;
   }
